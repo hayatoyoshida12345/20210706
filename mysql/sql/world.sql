@@ -36,10 +36,9 @@ DROP TABLE IF EXISTS `card`;
 CREATE TABLE `card` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Name` char(35) NOT NULL DEFAULT '',
-  `syasinurl` char(3) NOT NULL DEFAULT '',
-  `setumeibun` char(20) NOT NULL DEFAULT '',
-  PRIMARY KEY (`ID`),
-  CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)
+  `syasinurl` text NOT NULL DEFAULT '',
+  `setumeibun` text NOT NULL DEFAULT '',
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -49,35 +48,35 @@ CREATE TABLE `card` (
 -- ORDER BY:  `ID`
 
 set autocommit=0;
-INSERT INTO `card` VALUES (1,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (1,'シェル','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (2,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (2,'ローソン','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/lowson_ponta01.png','ローソンのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (3,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (3,'ゲオ','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/geo_ponta01.png','ゲオのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (4,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (4,'ユニデイ','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/uniliv_ponta01.png','ユニデイのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (5,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (5,'ONIX','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/onix_ponta01.png','ONIXのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (6,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (6,'ルートイン','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/routeinn_hotels_ponta01.png','ルートインのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (7,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (7,'スポーツヒマラヤ','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/himaraya_ponta01.png','スポーツヒマラヤのポンタカード');
 commit;
 
 set autocommit=0;
-INSERT INTO `card` VALUES (8,'シェル','ttps://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/shell_ponta01.png','シェルのポンタカード');
+INSERT INTO `card` VALUES (8,'JAL','https://point.recruit.co.jp/pontaweb/doc/common/assets/img/about/ponta/card/jal_ponta01.png','JALのポンタカード');
 commit;
 
 
